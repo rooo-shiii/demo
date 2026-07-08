@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mouse Events Example</title>
+</head>
+<body>
+    <h2>Javascript Mouse EVents</h2>
+
+    <!--Button for onclick-->
+    <button onclick="singleClick()">Click Me</button>
+    <p id="clickResult"></p>
+
+    
+    <!--Button for ondblclick-->
+    <button ondblclick="doubleClick()">Double Click Me</button>
+    <p id="dblclickResult"></p>
+
+    <!-- Button for onmouseover and onmouseout -->
+    <button onmouseover="mouseOver()" onmouseout="mouseOut()">
+        Hover Over Me
+    </button>
+    <p id="hoverResult"></p>
+
+    <script>
+        function singleClick() {
+            document.getElementById("clickResult").innerHTML =
+                "You clicked the button!";
+        }
+
+        function doubleClick() {
+            document.getElementById("dblclickResult").innerHTML =
+                "You double-clicked the button!";
+        }
+
+        function mouseOver() {
+            document.getElementById("hoverResult").innerHTML =
+                "Mouse is over the button!";
+        }
+
+        function mouseOut() {
+            document.getElementById("hoverResult").innerHTML =
+                "Mouse left the button!";
+        }
+  
+
+        
+    </script>
+</body>
+</html>

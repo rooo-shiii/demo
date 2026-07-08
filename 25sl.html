@@ -1,0 +1,28 @@
+<!-- JS program to find largest element of an array using map() method -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Largest Element using map()</title>
+</head>
+<body>
+    <script>
+        var n = parseInt(prompt("Enter the number of elements in the array:"));
+        var numbers = [];
+
+        for (var i = 0; i < n; i++) {
+            var num = parseInt(prompt("Enter number " + (i + 1) + ":"));
+            numbers.push(num);
+        }
+
+        var largest = numbers[0];
+
+        numbers.map(function(num) {
+            if (num > largest) {
+                largest = num;
+            }
+        });
+        document.write("Array:"+numbers.join(",")+"<br>")
+        document.write("Largest element is: " + largest);
+    </script>
+</body>
+</html>

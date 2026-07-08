@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Access by Tag Name Example</title>
+    </head>
+    <body>
+        <h2>Heading</h2>
+        <p>Paragraph 1</p>
+        <p>Paragraph 2</p>
+        <p>Paragraph 3</p>
+
+       
+       <button onclick="changeColor()">Change Color</button>
+        <script>
+           function changeColor(){   
+            //get all <p> elements
+                let paragraphs = document.getElementsByTagName("p");
+
+                //loop through and apply style
+                     let colors = ["red", "green", "blue"];
+
+            for (let i = 0; i < paragraphs.length; i++) {
+                paragraphs[i].style.color = colors[i];
+                              
+
+                }
+           }
+            </script>
+
+    </body>
+</html>

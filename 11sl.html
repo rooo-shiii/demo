@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Odd or Even number using Arrow Function</title>
+        <script>
+            //arrow function to calculate Odd or Even 
+            let isEven = n => n % 2 === 0;
+            
+              let num= parseInt(prompt("Enter a number:"));
+
+              //check is the input is null or not a number NaN =not a number
+              if(num== null || isNaN(num))
+              {
+                alert("Please enter a valid number!");
+              }
+              else{
+                if(isEven(num)){
+                    alert(num + " is Even");
+                }
+                else{
+                     alert(num + " is Odd");
+                }
+              }
+
+        </script>
+    </head>
+    <body>
+    </body>
+</html>

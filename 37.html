@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Change Text Alignment</title>
+    </head>
+    <body>
+        <h2> Choose Text Alignment </h2>
+        <form>
+            <input type="radio" name="align" value="left" onclick="changeAlignment(this.value)">Left<br>
+                <input type="radio" name="align" value="center" onclick="changeAlignment(this.value)">center<br>
+                    <input type="radio" name="align" value="Right" onclick="changeAlignment(this.value)">Right<br>
+        </form>
+        <p id="myParagraph">This is a sample paragraph. Change my font size!</p>
+        <script>
+            function changeAlignment(alignment){
+                document.getElementById("myParagraph").style.textAlign = alignment;
+            }
+            </script>
+
+    </body>
+</html>

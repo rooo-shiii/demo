@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Access by ID Example</title>
+    </head>
+    <body>
+
+        <p id="myParagraph">Hello World!</p>
+        <button onclick="changeText()">Click Me</button>
+        <script>
+            function changeText(){
+                //Access the paragraph element by Id
+                let para = document.getElementById("myParagraph");
+                //change its text content
+                para.textContent = "Text has been Changed!";
+                para.style.color = "red";//change text color
+                para.style.fontSize="20px";//change font size
+            } 
+            </script>
+
+    </body>
+</html>

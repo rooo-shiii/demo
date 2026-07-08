@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Access by Class Name Example</title>
+    </head>
+    <body>
+        <h2 class = "myclass">Heading</h2>
+        <p class = "myclass">Paragraph 1</p>
+      <p class = "myclass">Paragraph 2</p>
+      <p class = "myclass">Paragraph 3</p>
+
+       
+       <button onclick="changeColors()">Change Colors</button>
+        <script>
+           function changeColors(){
+            //get all elements with class "myclass"
+                let elements = document.getElementsByClassName("myclass");
+
+               //apply different colors
+               elements[0].style.color="red"; //heading
+               elements[1].style.color="blue"; //paragraph 1
+               elements[2].style.color="green"; //paragraph 2
+               elements[3].style.color="pink"; //paragraph 3
+                              
+
+                }
+           
+            </script>
+
+    </body>
+</html>

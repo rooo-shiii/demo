@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mouse</title>
+</head>
+<body>
+    <h2>Mouse Event</h2>
+    <button
+        onclick ="singleclick()"
+        dblclick ="doubleclick()"
+        onmouseover ="mouseOver()"
+        onmouseout ="mouseOut()"
+        onmousedown ="mouseDown()"
+        onmouseup ="mouseUp()">
+
+        Click Me</button>
+    <p id="result"></p>
+    <script>
+        function singleclick(){
+            document.getElementById("result").innerHTML = "You clicked the button!";
+        }
+        function doubleClick(){
+            document.getElementById("result").innerHTML = "You double-clicked the button!";
+        }
+        function mouseOver(){
+            document.getElementById("result").innerHTML = "You hover on mouse";
+        }
+        function mouseOut(){
+            document.getElementById("result").innerHTML = "You out the mouse!";
+        }
+        function mouseDown(){
+            document.getElementById("result").innerHTML = "You down the mouse!";
+        }
+        function mouseUp(){
+            document.getElementById("result").innerHTML = "You up the mouse!";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Change font size</title>
+    </head>
+    <body>
+        <h2> Choose font size </h2>
+        <form>
+            <input type="radio" name="fontsize" value="12px" onclick="changeFontSize(this.value)">Small<br>
+            <input type="radio" name="fontsize" value="16px" onclick="changeFontSize(this.value)">Medium<br>
+            <input type="radio" name="fontsize" value="20px" onclick="changeFontSize(this.value)">Large<br>
+        </form>
+        <p id="myParagraph">This is a sample paragraph. Change my font size!</p>
+        <script>
+            function changeFontSize(size){
+                document.getElementById("myParagraph").style.fontSize = size;
+            }
+            </script>
+
+    </body>
+</html>

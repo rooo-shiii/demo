@@ -1,0 +1,42 @@
+<!--Write a javascript program to accept n integers into an array, calculate and display the sum and average of the number, and also find the largest among them.-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sum, Average and Largest Number</title>
+</head>
+<body>
+    <script>
+        var n = parseInt(prompt("Enter the number of integers:"));
+
+        var numbers = [];
+        var sum = 0;
+
+        // Take inputs and calculate sum
+        for (var i = 0; i < n; i++) {
+            var num = parseInt(prompt("Enter number " + (i + 1) + ":"));
+            numbers.push(num);
+            sum += num;
+        }
+
+        // Initialize largest
+        var largest = numbers[0];
+
+        // Find largest number
+        for (var i = 1; i < numbers.length; i++) {
+            if (numbers[i] > largest) {
+                largest = numbers[i];
+            }
+        }
+
+        // Calculate average
+        var average = sum / n;
+
+      
+//display results
+        document.write("Numbered entered:"+numbers.join(",")+"<br>");
+        document.write("Sum is: " + sum + "<br>");
+         document.write("largest element is: " + largest + "<br>");
+         document.write("Average is: " + average);
+    </script>
+</body>
+</html>
